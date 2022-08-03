@@ -68,7 +68,7 @@ For either scenario to work, you will need to configure your system to accept us
 Open zypper configuration file:
 
 ```
-$   sudo nano /etc/zypp/zypp.conf
+$   EDITOR=nano sudoedit /etc/zypp/zypp.conf
 ```
 
 Make sure that the line `multiversion = provides:multiversion(kernel)` is not commented out (make sure there is no `#` prepended to `multiversion = provides:multiversion(kernel)`). If the line is commented out, use the arrow keys to bring the cursor near the `#` and delete it.
